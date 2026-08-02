@@ -6,7 +6,7 @@ coverage/
 .env
 .env.*
 !.env.example
-config/
+/config/
 
 logs/
 tmp/

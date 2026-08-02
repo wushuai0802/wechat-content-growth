@@ -191,7 +191,7 @@ export function DashboardClient({
   initialDailyPlan?: DailyArticleLimitDecision;
 }) {
   const [workspace, setWorkspace] = useState(initialWorkspace);
-  const [activity, setActivity] = useState(`工作区已加载，数据保存于 D 盘 runtime。更新时间：${new Date(initialWorkspace.updatedAt).toLocaleString("zh-CN")}`);
+  const [activity, setActivity] = useState(`工作区已加载，数据保存于本地运行目录。更新时间：${new Date(initialWorkspace.updatedAt).toLocaleString("zh-CN")}`);
   const [isSaving, setIsSaving] = useState(false);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [activeSection, setActiveSection] = useState("dashboard");
@@ -405,7 +405,7 @@ export function DashboardClient({
       }
       setWechatConfig(result);
       setWechatAppSecret("");
-      setActivity("公众号配置已保存到 D 盘运行目录。下一步在微信后台填同一个 Token 和回调 URL。");
+      setActivity("公众号配置已保存到本地运行目录。下一步在微信后台填同一个 Token 和回调 URL。");
     } catch (error) {
       setActivity(error instanceof Error ? error.message : "保存公众号配置失败");
     } finally {
@@ -578,7 +578,7 @@ export function DashboardClient({
 
       const updated = (await response.json()) as WorkspaceData;
       setWorkspace(updated);
-      setActivity(`已生成「${topicTitle}」草稿并保存到 E 盘文稿目录。`);
+      setActivity(`已生成「${topicTitle}」草稿并保存到本地文稿目录。`);
     } catch (error) {
       setActivity(error instanceof Error ? error.message : "生成草稿失败");
     } finally {
@@ -1123,7 +1123,7 @@ export function DashboardClient({
                 <HardDrive size={18} />
                 <span>存储</span>
               </div>
-              <p>D 盘运行数据，E 盘文稿、图片、报表归档。</p>
+              <p>运行数据、文稿、图片和报表默认保存在 .data/。</p>
             </section>
           </aside>
         </section>
@@ -1228,7 +1228,7 @@ export function DashboardClient({
                 <KeyRound size={18} />
                 <div>
                   <strong>本地公众号配置</strong>
-                  <span>密钥只保存到 D 盘运行目录，不写入代码仓。</span>
+                  <span>密钥只保存到本地运行目录，不写入代码仓。</span>
                 </div>
               </div>
               <div className="constraintList compactList">
