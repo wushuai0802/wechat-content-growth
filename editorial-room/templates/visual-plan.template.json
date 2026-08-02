@@ -1,0 +1,26 @@
+{
+  "taskId": "YYYYMMDD-task-001",
+  "articleTitle": "",
+  "visualStrategy": "",
+  "images": [
+    {
+      "slot": "cover|opening|section|summary",
+      "purpose": "",
+      "recommendedPlacement": "",
+      "localPath": "",
+      "sha256": "",
+      "width": 0,
+      "height": 0,
+      "source": "generated|user_provided|licensed|public_domain|internal",
+      "promptOrRationale": "",
+      "riskNotes": []
+    }
+  ],
+  "rejectedImages": [
+    {
+      "localPath": "",
+      "reason": ""
+    }
+  ],
+  "notesForWriterOrQa": []
+}

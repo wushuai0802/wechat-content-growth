@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible product or workflow problem.
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: Describe what happened without including credentials or private account data.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Provide the smallest reproducible sequence.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Windows 11, Node 22, commit SHA
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs
+      render: shell

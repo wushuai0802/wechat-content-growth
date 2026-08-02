@@ -1,0 +1,25 @@
+{
+  "taskId": "YYYYMMDD-task-001",
+  "status": "pass|needs_revision|reject",
+  "checkedAt": "2026-06-20T00:00:00.000+08:00",
+  "checks": {
+    "titleMatchesContent": true,
+    "coverMatchesTitle": true,
+    "imagesMatchSections": true,
+    "wechatReadability": true,
+    "authorFixed": true,
+    "noRepeatedTitleInBody": true,
+    "noOldImageMismatch": true,
+    "lengthAppropriate": true,
+    "ctaAppropriate": true
+  },
+  "issues": [
+    {
+      "severity": "blocker|major|minor",
+      "location": "title|cover|body|image|ending|metadata",
+      "problem": "",
+      "suggestedFix": ""
+    }
+  ],
+  "summary": ""
+}

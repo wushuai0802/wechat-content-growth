@@ -1,0 +1,17 @@
+{
+  "taskId": "YYYYMMDD-task-001",
+  "status": "pass|needs_revision|reject",
+  "riskScore": 0,
+  "checkedAt": "2026-06-20T00:00:00.000+08:00",
+  "riskAreas": {
+    "factualAccuracy": "low|medium|high",
+    "copyright": "low|medium|high",
+    "sensitiveTopic": "low|medium|high",
+    "medicalFinancialEducationClaims": "low|medium|high",
+    "misleadingPromise": "low|medium|high",
+    "platformPolicy": "low|medium|high"
+  },
+  "requiredChanges": [],
+  "sourceGaps": [],
+  "notes": ""
+}

@@ -1,0 +1,40 @@
+{
+  "taskId": "YYYYMMDD-task-001",
+  "createdAt": "2026-06-20T00:00:00.000+08:00",
+  "createdBy": "00-editor-in-chief",
+  "status": "assigned",
+  "targetChannel": "wechat_official_account",
+  "experimentGoal": "maximize_profit_with_early_signal_learning",
+  "topic": {
+    "title": "",
+    "category": "hot|practical|emotional|evergreen|ai|finance|education|career|family|other",
+    "audience": "",
+    "readerPain": "",
+    "timeliness": "hot|seasonal|evergreen",
+    "riskLevel": "low|medium|high"
+  },
+  "referenceInputs": {
+    "hotTopicFiles": [],
+    "viralTeardownFiles": [],
+    "metricFiles": [],
+    "sourceUrls": []
+  },
+  "contentRequirements": {
+    "titleStyle": "pain-point|checklist|counter-intuitive|hot-take|how-to|story",
+    "targetLength": "short|medium|long|auto",
+    "tone": "大众化、清晰、有用，不硬核不过度煽动",
+    "mustInclude": [],
+    "mustAvoid": ["不实承诺", "夸大收益", "复制热门文章原文", "旧图错配"]
+  },
+  "visualRequirements": {
+    "coverPurpose": "increase_click_through_rate",
+    "inlineImagePolicy": "decide_by_content_need",
+    "avoid": ["旧图复用", "文字太密", "比例不适合公众号", "和正文主题不一致"]
+  },
+  "outputs": {
+    "draftPath": "editorial-room/drafts/YYYYMMDD-task-001.md",
+    "visualPlanPath": "editorial-room/visuals/YYYYMMDD-task-001.visual-plan.json",
+    "qaPath": "editorial-room/qa/YYYYMMDD-task-001.qa.json",
+    "riskPath": "editorial-room/risk/YYYYMMDD-task-001.risk.json"
+  }
+}
