@@ -3,10 +3,13 @@
 [![CI](https://github.com/wushuai0802/wechat-content-growth/actions/workflows/ci.yml/badge.svg)](https://github.com/wushuai0802/wechat-content-growth/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/wushuai0802/wechat-content-growth/actions/workflows/codeql.yml/badge.svg)](https://github.com/wushuai0802/wechat-content-growth/actions/workflows/codeql.yml)
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/wushuai0802/wechat-content-growth)](https://github.com/wushuai0802/wechat-content-growth/releases)
 
 本地优先、自托管的微信公众号内容运营与实验控制台。项目把热点采集、选题评分、文章生成、内容质量门禁、配图计划、微信草稿箱和收益复盘放进同一个可审阅工作流。
 
 This repository is a local-first, self-hosted operations console for WeChat Official Account content experiments.
+
+![内容增长控制台](docs/assets/dashboard.png)
 
 ## 能做什么
 
@@ -42,12 +45,27 @@ npm run dev
 
 打开 `http://127.0.0.1:3000`。首次访问会在 `.data/` 下创建本地演示工作区。
 
+刚克隆下来无需微信账号或 AI 密钥即可查看完整演示数据。准备接入真实工作流时：
+
+1. 在“模型配置”中连接本机 OpenAI-compatible provider。
+2. 在“账号管理”中填写微信公众号开发配置，保持 `draft_only`。
+3. 先生成、审核并创建一篇测试草稿。
+4. 确认封面、正文图片和微信草稿均正确后，再导入真实表现数据。
+
+更完整的操作步骤见 [快速上手](docs/getting-started.md)。
+
 运行验证：
 
 ```bash
 npm test
 npm run build
 npm start
+```
+
+完整发布前检查：
+
+```bash
+npm run check
 ```
 
 ## 配置
@@ -88,6 +106,15 @@ docs/             架构、配置和安全文档
 
 架构与数据流详见 [architecture.md](docs/architecture.md)。
 
+## 维护与升级
+
+- 当前稳定版本：`1.x`。
+- Node.js 支持版本：20 和 22，推荐 22。
+- 版本规则遵循 Semantic Versioning。
+- 升级前备份 `.data/`，再执行 `git pull && npm ci && npm run check`。
+- 变更记录见 [CHANGELOG.md](CHANGELOG.md)，发展方向见 [ROADMAP.md](ROADMAP.md)。
+- 使用问题见 [SUPPORT.md](SUPPORT.md)，安全问题请按 [SECURITY.md](SECURITY.md) 私下报告。
+
 ## 当前限制
 
 - 管理台没有用户登录和权限系统。
@@ -95,6 +122,7 @@ docs/             架构、配置和安全文档
 - 微信草稿和发布能力受公众号类型、接口权限、IP 白名单及微信平台规则限制。
 - 热点线索不等于事实；具体数字、政策、医疗、法律、金融等内容必须人工核验。
 - AI 生成内容和图片必须在使用前检查事实、版权、肖像和平台合规性。
+- 当前界面以中文为主，英文国际化尚未完成。
 
 ## 开源边界
 

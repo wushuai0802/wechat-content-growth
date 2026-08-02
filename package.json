@@ -1,13 +1,25 @@
 {
   "name": "wechat-content-growth",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Local-first WeChat content operations and experimentation console.",
+  "keywords": [
+    "wechat",
+    "official-account",
+    "content-operations",
+    "self-hosted",
+    "nextjs",
+    "typescript"
+  ],
   "license": "AGPL-3.0-only",
   "repository": {
     "type": "git",
     "url": "https://github.com/wushuai0802/wechat-content-growth.git"
   },
+  "bugs": {
+    "url": "https://github.com/wushuai0802/wechat-content-growth/issues"
+  },
+  "homepage": "https://github.com/wushuai0802/wechat-content-growth#readme",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -16,19 +28,21 @@
     "build": "next build",
     "start": "node scripts/start-standalone.mjs",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:smoke": "node scripts/smoke-test.mjs",
+    "check": "npm test && npm run build && npm run test:smoke && npm audit --omit=dev --audit-level=high"
   },
   "dependencies": {
-    "lucide-react": "^1.20.0",
+    "lucide-react": "^1.28.0",
     "next": "15.5.22",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "sharp": "0.35.3"
   },
   "devDependencies": {
     "@types/node": "^22.15.32",
-    "@types/react": "^19.0.12",
-    "@types/react-dom": "^19.0.4",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
     "typescript": "^5.8.3",
     "vitest": "^3.2.3"
   },
