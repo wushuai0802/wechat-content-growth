@@ -33,11 +33,11 @@
     "check": "npm test && npm run build && npm run test:smoke && npm audit --omit=dev --audit-level=high"
   },
   "dependencies": {
-    "lucide-react": "^1.28.0",
-    "next": "15.5.22",
+    "lucide-react": "^1.34.0",
+    "next": "15.5.24",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "sharp": "0.35.3"
+    "sharp": "0.35.4"
   },
   "devDependencies": {
     "@types/node": "^22.15.32",
