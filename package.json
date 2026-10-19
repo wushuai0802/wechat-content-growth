@@ -30,25 +30,26 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:smoke": "node scripts/smoke-test.mjs",
-    "check": "npm test && npm run build && npm run test:smoke && npm audit --omit=dev --audit-level=high"
+    "check": "npm test && npm run build && npm run test:smoke && npm audit --audit-level=high"
   },
   "dependencies": {
     "lucide-react": "^1.28.0",
-    "next": "15.5.22",
+    "next": "15.5.28",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
-    "sharp": "0.35.3"
+    "sharp": "0.35.5"
   },
   "devDependencies": {
     "@types/node": "^22.15.32",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.3"
+    "vitest": "^4.1.12"
   },
   "overrides": {
     "esbuild": "^0.28.1",
     "postcss": "^8.5.18",
+    "vite": "^7.3.5",
     "sharp": "$sharp"
   }
 }

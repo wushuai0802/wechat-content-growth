@@ -2,6 +2,15 @@
 
 All notable changes are documented here. The project follows Semantic Versioning.
 
+## [Unreleased]
+
+### Security
+
+- Update Next.js 15 and sharp to patched releases and refresh vulnerable transitive dependencies.
+- Upgrade Vitest to the maintained 4.1 line to remove vulnerable mocker and worker-pool dependencies.
+- Keep Vite on the compatible 7.x line for the existing TSX test configuration.
+- Include development dependencies in the high-severity audit gate for local checks and CI.
+
 ## [1.0.0] - 2026-08-02
 
 ### Added
