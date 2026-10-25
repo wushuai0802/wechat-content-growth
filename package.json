@@ -33,16 +33,16 @@
     "check": "npm test && npm run build && npm run test:smoke && npm audit --audit-level=high"
   },
   "dependencies": {
-    "lucide-react": "^1.28.0",
+    "lucide-react": "^1.61.0",
     "next": "15.5.28",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "sharp": "0.35.5"
   },
   "devDependencies": {
     "@types/node": "^22.15.32",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "typescript": "^5.8.3",
     "vitest": "^4.1.12"
   },
